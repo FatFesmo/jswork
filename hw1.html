@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict'
+ 		let Tc =25;
+ 		let Tf = (9/5)*Tc+32;
+ 		alert(Tf);
+
+        let name = "Василий";
+        let admin = name;
+        console.log(admin);
+
+        console.log(10 + 10 + "10");
+		console.log(10 + "10" + 10);
+		console.log(10 + 10 + +"10"); 
+		console.log(10 / -"");
+		console.log(10 / +"2,5"); 
+		/*1) число+число+строка, конкатенация суммы и строки
+		  2) 10+"10"=строка, строка+10=101010 КОНКАТЕНАЦИЯ!
+		  3)унарный плюс превратил строку "10" в число, сумма всех чисел = 30
+		  4)унарный минус из строки "" делает -0, что = -infinity
+		  5)унарный плюс не понимает строку с запятыми, строка не становится число, поэтому = NaN
+		  */
+	</script>
+</body>
+</html>			
