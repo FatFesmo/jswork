@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		// Задачки с инкрементами
+		//пример 1, т.к инкремент префексный добавляем 1 к заданному параметру A 
+    	let a = 1, b = 1, c, d;
+		c = ++a;
+		alert(c); // ответ: 2
+		//пример 2 инкремент постфиксный параметру D перейдет значение B и уже после B увеличится на 1
+		d = b++;
+		alert(d); //ответ: 1
+		//пример 3 параметр А уже увеличен до 2, благодаря префиксному инкременту добавляем ещё единицу и складываем с 2
+		c = 2 + ++a;
+		alert(c); //ответ: 5
+		//пример 4 параметр B равен 2, он складывается с 2 и полученное значение передает D, после этого параметр B увеличивается на 1
+		d = 2 + b++;
+		alert(d); //ответ: 4
+		alert(a); //3
+		alert(b); //3
+
+	</script>
+	<script>
+		//умножение с присваеванием, заданный параметр A умножится на число в скобках и передаст новое значение параметру А, получившиеся число в скобках прибавляем 1, х=5.
+		'use strict';
+		let a = 2;
+ 		let x = 1 + (a *= 2); 
+	</script>
+	<script>
+		//задание выполнено не до конца, я так и не допер как задать диапозон чисел отрицательных и положительных(((
+		'use strict';
+		let a = parseInt(Math.random() * 100);
+		let b = parseInt(Math.random() * 100);
+
+		if (a >= 0 && b >= 0) {
+			console.log(a - b);
+		} else if (a < 0 && b < 0) {
+			console.log(a * b);
+		} else if (a * b < 0) {
+			console.log(a + b);
+		}
+	</script>
+	<script>
+		function addition(h, b) {
+			return h + b;
+		}
+		function multiplication(h, b) {
+			return h * b;
+		}function division(h, b) {
+			return h/b;
+		}function subtraction(h, b) {
+			return h - b;
+		}
+	</script>
+	<script>
+		function addition(h, b) {
+			return h + b;
+		}
+		function multiplication(h, b) {
+			return h * b;
+		}function division(h, b) {
+			return h/b;
+		}function subtraction(h, b) {
+			return h - b;
+		}
+		function mathOperation (arg1, arg2, operation) {
+			switch (operation) {
+				case "+":
+					return addition(arg1, arg2);
+				case "-":
+					return subtraction(arg1, arg2);
+				case "/":
+					return division(arg1, arg2);
+				case "*":
+					return multiplication(arg1, arg2);
+
+			}
+		}
+	</script>
+</body>
+</html>
